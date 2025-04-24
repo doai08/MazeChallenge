@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Pause : MonoBehaviour
+public class Pause : UIScreen
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Button btnContinue, btnHome, btnSound;
+    public void OnClickContinue()
     {
-        
+        UIManager.Instance.HidePopup();
     }
-
-    // Update is called once per frame
-    void Update()
+       public void OnClickHome()
     {
-        
+         UIManager.Instance.HidePopup();
+        SceneFlowManager.Instance.LoadScene(SceneType.StartUp);
+    }
+    public void OnClickSound()
+    {
+
     }
 }

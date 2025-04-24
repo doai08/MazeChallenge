@@ -8,7 +8,8 @@ public enum SceneType
 	Loading,
 	StartUp,
 	GamePlay,
-} 
+	Stage
+}
 public enum AudioType
 {
 	Music,
@@ -21,4 +22,21 @@ public enum SoundType
 	Click,
 	PopUp,
 	Combo
+}
+public enum CellStatus
+{
+	Unvisited,
+	Visiting,
+	Visited
+}
+public enum WallType
+{
+	
+}
+public enum DirectionType
+{
+	LEFT,
+	RIGHT,
+	UP,
+	DOWN
 }

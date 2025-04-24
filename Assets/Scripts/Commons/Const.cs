@@ -4,7 +4,6 @@ using UnityEngine;
 public static class GameConst
 {
 	public const string DATA_USER = "DATA_USER";
-	public const string DATA_GAMEPLAY = "DATA_GAMEPLAY";
 }
 
 public static class PlayDataInitConst
@@ -22,6 +21,24 @@ public static class UserDataInitConst
 
 public static class PopUpPathConst
 {
-	public const string POPUP_PRIVACY = "POPUP_PRIVACY";
-	public const string POPUP_SETTING = "Popups/PopUp_Setting";
+	public const string POPUP_PAUSE = "Popups/PopUp_Pause";
+}
+
+public static class EventNameConst
+{
+	public const string MOVE = "MOVE";
+	public const string SHOW_PATH = "SHOW_PATH";
+	public const string AUTO_MOVE = "AUTO_MOVE";
+	public const string LOAD_STAGE = "LOAD_STAGE";
+}
+public static class BoardConst
+{
+	public const int HEIGHT = 13;
+	public const int WIDTH = 10;
+}
+
+public static class PlayerConst
+{
+	public const int MOVE_SPEED = 15;
+	public const int ROTATE_SPEED = 10;
 }

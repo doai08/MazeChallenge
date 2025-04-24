@@ -23,7 +23,8 @@ public class DataInGameManager : Singleton<DataInGameManager>
 		{
 			coin = UserDataInitConst.COIN,
 			isMusic = UserDataInitConst.IS_MUSIC,
-			isSound = UserDataInitConst.IS_SOUND
+			isSound = UserDataInitConst.IS_SOUND,
+			passedStages = new List<StageItemData>()
 		};
 		SaveUserData(_userData);
 	}
